@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title> 마우스 움직임에 따라 제어되는 이미지 시퀀스 </title>
+
+	<!-- 웹폰트 아이콘 -->
+	<script src="https://kit.fontawesome.com/0f208ed8d4.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+	<!-- 
+		이벤트연결하기
+		e.pageX/e.pageY
+		.text()
+		.width()/.height()
+		연산자
+		반복문(for)
+		.html()
+		.hide()/.show()
+		문자열 숫자
+
+		<단계>
+		1. 준비단계-(완료)
+		2. 기본 레이아웃 설정
+		3. for문을 이용해 200개의 이미지 자동 재생
+		4. 브라우저상에 마우스 무브시, 이미지가 순차적으로 연동
+		5. 완료
+	 -->
+
+	 <!-- <h3>0</h3> -->
+
+	<!-- 배경 이미지 -->
+	<div class="bg"></div>
+
+	<!-- header -->
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="로고"></a>
+		</div>
+		<!-- <h1></h1> -->
+		<ul>
+			<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+		</ul>
+	</header>
+
+	<!-- menu -->
+	<nav>
+		<ul>
+
+			<li>
+				<a href="#">걷다 보는 마임</a>
+				<div>
+					<h2>걷다 보는 마임</h2>
+					<p><img src="img/thumb1.jpg" /></p>
+					<ul>
+						<li><a href="a1.html">축제 몸짓</a></li>
+						<li><a href="a2.html">신나는 예술여행</a></li>
+						<li><a href="a3.html">극장 공연</a></li>
+						<li><a href="a4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">불의 도시;도깨비 난장</a>
+				<div>
+					<h2>불의 도시;도깨비 난장</h2>
+					<p><img src="img/thumb2.jpg" /></p>
+					<ul>
+						<li><a href="b1.html">축제 몸짓</a></li>
+						<li><a href="b2.html">인생 공연</a></li>
+						<li><a href="b3.html">극장 공연</a></li>
+						<li><a href="b4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">봄의 도시</a>
+				<div>
+					<h2>봄의 도시</h2>
+					<p><img src="img/thumb3.jpg" /></p>
+					<ul>
+						<li><a href="c1.html">축제 몸짓</a></li>
+						<li><a href="c2.html">마임 아카데미</a></li>
+						<li><a href="c3.html">극장 공연</a></li>
+						<li><a href="c4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">물의 도시;아!水라장</a>
+				<div>
+					<h2>물의 도시;아!水라장</h2>
+					<p><img src="img/thumb4.jpg" /></p>
+					<ul>
+						<li><a href="d1.html">축제 몸짓</a></li>
+						<li><a href="d2.html">리얼노상댄스펍</a></li>
+						<li><a href="d3.html">극장 공연</a></li>
+						<li><a href="d4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">대학로 문화의 거리</a>
+				<div>
+					<h2>대학로 문화의 거리</h2>
+					<p><img src="img/thumb5.jpg" /></p>
+					<ul>
+						<li><a href="e1.html">축제 몸짓</a></li>
+						<li><a href="e2.html">리얼노상댄스펍</a></li>
+						<li><a href="e3.html">극장 공연</a></li>
+						<li><a href="e4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">애막골 문화의 거리</a>
+				<div>
+					<h2>애막골 문화의 거리</h2>
+					<p><img src="img/thumb6.jpg" /></p>
+					<ul>
+						<li><a href="f1.html">축제 몸짓</a></li>
+						<li><a href="f2.html">리얼노상댄스펍</a></li>
+						<li><a href="f3.html">극장 공연</a></li>
+						<li><a href="f4.html">갤러리</a></li>
+					</ul>
+				</div>
+			</li>
+
+		</ul>
+	</nav>
+
+
+	<!-- 이미지 시퀀스 프레임 -->
+	<div class="aa">
+		<!-- <img src="img/pic0.jpg" /> -->
+        <img src="img/f2.jpg" alt="이미지1">
+    </div>
+
+
+	<!-- footer -->
+	<footer>
+		<ul>
+			<li><a href="g1.html">마임프린지</a></li>
+			<li><a href="g2.html">마임축제 봄</a></li>
+			<li><a href="g3.html">물화일체</a></li>
+			<li><a href="g4.html">마임축제 여름</a></li>
+			<li><a href="g5.html">마임축제 가을</a></li>
+			<li><a href="g6.html">마임백씬</a></li>
+		</ul>
+		<span>스마트웹_프론트 앤드 개발자 과정 : in ok park : 지도교수 : 이승태</span>
+	</footer>
+</body>
+
+</html>
